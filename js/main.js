@@ -37,6 +37,30 @@ function renderImagesHtml2(query) {
 
 function renderImagesHtml(data) {
   let html = '<div class="image-container">';
+
+  try {
+    if (!(data.data.length > 0)) {
+      throw "Erroneous response";
+    }
+
+    for (let i = 0; i < data.data.length; i++) {
+      let imagesOriginalUrl = data.data[i].images.original.url;
+      let imagesTitle = data.data[i].title;
+      html += `
+        <img 
+            src="${imagesOriginalUrl}"
+            alt="${imagesTitle}"/>
+        <p>Title: ${imagesTitle}</p>`;
+    }
+    html += "</div>";
+    let cleanedHtml = html.replace(/>\s+</g, "><");
+    giphyContainer.innerHTML = html;
+
+    console.log(cleanedHtml);
+  } catch (error) {
+    console.warn(error);
+    giphyContainer.innerHTML = `<p>Error searching for: ${globalSearchQuery}</p>`;
+  }
 }
 
 async function fetchGiphyImageSrc(query) {
