@@ -1,5 +1,9 @@
 # Website-with-a-Search-Engine
 
+Author: Ajax Tchakounte
+
+## Project overview
+
 This project is search engine for Giphy that:
 
 - allows users to enter and submit a keyword query
