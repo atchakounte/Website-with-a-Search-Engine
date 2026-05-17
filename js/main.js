@@ -36,7 +36,7 @@ function renderImagesHtml2(query) {
 }
 
 function renderImagesHtml(data) {
-  let html = '<div class="image-item">';
+  let html = '<div class="image-container">';
 
   try {
     if (!(data.data.length > 0)) {
