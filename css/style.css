@@ -4,6 +4,7 @@ body {
 
 .image-row {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column; /* Stacks images vertically */
   align-items: center; /* Optional: centers them horizontally */
   gap: 20px;
