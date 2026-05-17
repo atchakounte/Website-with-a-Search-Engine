@@ -30,3 +30,17 @@ console.warn(err);
 giphyContainer.innerHTML = `<p>Error fetching repo: ${query}</p>`;
 });
 }
+
+.image-item {
+border: 2px solid black;
+background-color: lightgray;
+margin: 10px;
+padding: 10px;
+width: 350px;
+}
+
+.image-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
