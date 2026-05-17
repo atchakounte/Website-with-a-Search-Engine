@@ -2,8 +2,16 @@ body {
   min-width: 400px;
 }
 
-.image-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.image-row {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers images horizontally */
+  align-items: center; /* Centers images vertically if they differ in height */
+  gap: 15px; /* Adds equal space between images */
+  flex-wrap: wrap; /* Allows images to drop to a new line on small screens */
+}
+
+.image-row img {
+  max-width: 100%; /* Ensures images are responsive */
+  height: 200px; /* Optional: forces a consistent height */
+  object-fit: cover; /* Maintains aspect ratio while filling the height */
 }

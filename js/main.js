@@ -4,7 +4,7 @@ let giphySearchQuery = document.querySelector("[name=giphy-query-name]");
 let globalSearchQuery = "";
 
 function renderImagesHtml(data) {
-  let html = '<div class="image-item">';
+  let html = '<div class="image-row>';
 
   try {
     if (!(data.data.length > 0)) {
