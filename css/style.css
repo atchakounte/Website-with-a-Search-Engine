@@ -2,8 +2,7 @@ body {
   min-width: 400px;
 }
 
-.category-item,
-.meal {
+.image-item {
   border: 2px solid black;
   background-color: lightgray;
   margin: 10px;
@@ -11,22 +10,8 @@ body {
   width: 350px;
 }
 
-.meal > img {
-  width: 80%;
-}
-
-.category-item.wide,
-.meal.wide {
-  width: 90%;
-  text-align: center;
-}
-
-.category-container .meal-container {
+.image-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.ingredient-list {
-  text-align: left;
 }
